@@ -66,9 +66,9 @@ Structured JSON
 - Handling uncertainty
 - Technical documentation
 
-## Important Scope Note
+## Scope
 
-The examples in this repository are portfolio demonstrations created to show annotation methodology. They are not presented as confidential client work or as a claim of professional annotation on behalf of a specific organisation.
+These are portfolio demonstrations created to show annotation methodology. They are not confidential client work.
 
 ## Author
 
