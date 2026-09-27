@@ -1,0 +1,9 @@
+{
+  "image_id": "demo_image_001",
+  "scene": {"setting": "indoor office", "confidence": "clear"},
+  "entities": [
+    {"id": "person_01", "category": "person", "description": "Person standing beside a desk", "action": "looking at a laptop", "confidence": "clear"},
+    {"id": "object_01", "category": "laptop", "description": "Laptop positioned on the desk", "action": null, "confidence": "clear"}
+  ],
+  "relationships": [{"subject": "person_01", "relation": "standing_beside", "object": "object_01"}]
+}
