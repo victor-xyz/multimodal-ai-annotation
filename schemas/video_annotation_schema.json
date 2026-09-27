@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Video Annotation",
+  "type": "object",
+  "required": ["video_id", "events"],
+  "properties": {
+    "video_id": {"type": "string"},
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["start_time", "end_time", "description"],
+        "properties": {
+          "start_time": {"type": "string"},
+          "end_time": {"type": "string"},
+          "description": {"type": "string"},
+          "entities": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"type": "string", "enum": ["clear", "likely", "uncertain"]}
+        }
+      }
+    }
+  }
+}
