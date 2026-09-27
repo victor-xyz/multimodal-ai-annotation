@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Image Annotation",
+  "type": "object",
+  "required": ["image_id", "scene", "entities"],
+  "properties": {
+    "image_id": {"type": "string"},
+    "scene": {
+      "type": "object",
+      "required": ["setting"],
+      "properties": {
+        "setting": {"type": "string"},
+        "confidence": {"type": "string", "enum": ["clear", "likely", "uncertain"]}
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "category", "description"],
+        "properties": {
+          "id": {"type": "string"},
+          "category": {"type": "string"},
+          "description": {"type": "string"},
+          "action": {"type": ["string", "null"]},
+          "confidence": {"type": "string", "enum": ["clear", "likely", "uncertain"]}
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["subject", "relation", "object"],
+        "properties": {
+          "subject": {"type": "string"},
+          "relation": {"type": "string"},
+          "object": {"type": "string"}
+        }
+      }
+    }
+  }
+}
