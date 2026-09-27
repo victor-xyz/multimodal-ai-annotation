@@ -1,0 +1,8 @@
+{
+  "video_id": "demo_video_001",
+  "events": [
+    {"start_time": "00:00", "end_time": "00:03", "description": "A person enters the room.", "entities": ["person_01"], "confidence": "clear"},
+    {"start_time": "00:03", "end_time": "00:06", "description": "The person walks towards a table.", "entities": ["person_01", "table_01"], "confidence": "clear"},
+    {"start_time": "00:06", "end_time": "00:09", "description": "The person reaches towards an object on the table.", "entities": ["person_01", "table_01", "object_01"], "confidence": "likely"}
+  ]
+}
